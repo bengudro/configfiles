@@ -1,0 +1,18 @@
+#!/bin/bash
+# File: /usr/local/bin/compton_prefs
+# https://wiki.archlinux.org/index.php/Compton#Command_only
+compton --shadow			\
+	--no-dock-shadow		\
+	--no-dnd-shadow			\
+	--fading			\
+	--shadow-opacity	0.38	\
+	--fade-out-step		200	\
+	--fade-in-step		200	\
+	--shadow-offset-y	0	\
+	--shadow-offset-x	0	\
+	--shadow-radius		3	\
+	--fade-delta		2	\
+	--menu-opacity		0.88	\
+	--vsync			opengl	\
+	--daemon
+# vim:ts=8 sw=8 noet
