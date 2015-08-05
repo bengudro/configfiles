@@ -9,12 +9,9 @@
 #     $ sudo mkdir -p /usr/local/bin
 #     $ sudo cp configfiles/compton_prefs /usr/local/bin
 #     $ rm -rf configfiles
-#     $ sudo su -
-#     # cd /usr/local/bin
-#     # chown root:root compton_prefs
-#     # chmod 755 compton_prefs
-#     # ln -s compton_prefs c
-#     # exit
+#     $ cd /usr/local/bin
+#     $ sudo ln -s compton_prefs c
+#     $ cd
 #
 # Now, as my normal user, I can start compton by simply typing “c”-<RETURN>
 # (without the quotes) in my favorite program-launcher (for example via
