@@ -17,13 +17,14 @@
 #     # ln -s compton_prefs c
 #     # exit
 #
-# Now, as your normal user, you can start Compton by simply typing "c"+<RETURN>
-# (without the quotes) in your favorite program-launcher (for example via
-# Ctrl-<F2> in Gnome/KDE, or via Mod-P for dmenu in i3wm, or what have you…
+# Now, as my normal user, I can start compton by simply typing “c”-<RETURN>
+# (without the quotes) in my favorite program-launcher (for example via
+# <Ctrl>+<F2> in Gnome/KDE, or via <Mod>+“p” for dmenu in i3, or what have you…
 #
 # I know that I could also auto-launch Compton using my WM/DE, but I like
-# having the flexibilty to kill/re-launch Compton by a simple commande whenever
+# having the flexibilty to kill/re-launch Compton by a simple command whenever
 # I feel like it.  :)
+
 compton --shadow			\
 	--no-dock-shadow		\
 	--no-dnd-shadow			\
@@ -38,4 +39,5 @@ compton --shadow			\
 	--menu-opacity		0.88	\
 	--vsync			opengl	\
 	--daemon
+
 # vim:ts=8 sw=8 noet
