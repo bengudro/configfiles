@@ -1,30 +1,28 @@
 #!/bin/bash
 #
 # File: /usr/local/bin/compton_prefs
-#
-# https://wiki.archlinux.org/index.php/Compton#Command_only
+# Based on: https://wiki.archlinux.org/index.php/Compton#Command_only
 #
 # How to use this file to type as little as possible when starting Compton:
 #
 #     $ git clone https://github.com/bengudro/configfiles.git
-#     $ sudo mkdir -p /usr/local/bin
+#     $ sudo mkdir --parents /usr/local/bin
 #     $ sudo cp configfiles/compton_prefs /usr/local/bin
-#     $ rm -rf configfiles
+#     $ rm --force --recursive configfiles
 #     $ sudo su -
 #     # cd /usr/local/bin
 #     # chown root:root compton_prefs
 #     # chmod 755 compton_prefs
-#     # ln -s compton_prefs c
+#     # ln --symbolic compton_prefs c
 #     # exit
 #
 # Now, as my normal user, I can start compton by simply typing “c”-<RETURN>
 # (without the quotes) in my favorite program-launcher (for example via
 # <Ctrl>+<F2> in Gnome/KDE, or via <Mod>+“p” for dmenu in i3, or what have you…
 #
-# I know that I could also auto-launch Compton using my WM/DE, but I like
-# having the flexibilty to kill/re-launch Compton by a simple command whenever
-# I feel like it.  :)
-
+# I could also auto-launch Compton using my WM/DE, but I like having the
+# flexibilty to kill/re-launch Compton by a simple command whenever I feel like
+# it  :)
 compton --shadow			\
 	--no-dock-shadow		\
 	--no-dnd-shadow			\
